@@ -1,0 +1,284 @@
+.plans{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding: 36px 148px 44px 117px;
+	background-color: #fff; 
+
+	&-top{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 90px;
+
+		&-step{
+			color: #A4AEB4;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-weight: 600;
+			margin-top: 5px;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+		}
+
+		&-lost{
+			margin-top: 5px;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+			color: #A4AEB4;
+		}
+
+		&-help{
+			margin-top: 5px;
+			text-decoration: none;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+			color: #2696E8;
+		}
+	}
+
+	&-content{
+		margin-right:58px;
+
+
+		&-titles{
+			display: flex;
+			flex-direction: column;
+
+			&-main{
+				font-family: Montserrat Alternates;
+				font-size: 28px;
+				font-weight: 800;
+				line-height: 36px;
+				letter-spacing: 0.02em;
+				margin: 0;
+			}
+
+			&-text{
+				font-family: Montserrat;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 24px;
+				letter-spacing: 0.02em;
+				color: #A4AEB4;
+				margin: 12px 0 0;
+			}
+		}
+
+		&-top{
+			width: 100%;
+			margin-top: 46px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			&-title{
+				width: 100%;
+				margin: 0 0 20px 0; 
+				font-family: Montserrat Alternates;
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 28px;
+				letter-spacing: 0px;
+			}
+
+			&-div{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 36px;
+				width: 49%;
+				position: relative;
+
+				&-inputDollar{
+					font-family: Montserrat;
+					font-size: 21px;
+					font-weight: 600;
+					line-height: 28px;
+					letter-spacing: 0.02em;
+
+					position: absolute;
+					left: 0;
+					top: 4px;
+				}
+
+				&-label{
+					font-family: Montserrat;
+					font-size: 14px;
+					font-weight: 500;
+					line-height: 20px;
+					letter-spacing: 0.02em;
+					color: #A4AEB4;
+				}
+
+				&-input{
+					border: none;
+					border-bottom: 2px solid #D5D9DC;
+					border-radius: 2px;
+					margin-top: 4px;
+					padding-left: 12px;
+					outline: none;
+					height: 28px;
+					font-family: Montserrat;
+					font-size: 21px;
+					font-weight: 600;
+					line-height: 28px;
+					letter-spacing: 0.02em;
+				}
+
+				/*for hiding input arrows*/
+				&-input::-webkit-outer-spin-button,
+				&-input::-webkit-inner-spin-button {
+				  -webkit-appearance: none;
+				  margin: 0;
+				}
+
+				/* Firefox */
+				&-input[type=number] {
+				  -moz-appearance: textfield;
+				}
+
+				&-input:focus{
+					border-color: #2696E8;
+				}
+			}
+		}
+
+		&-bottom{
+			display: flex;
+			flex-direction: column;
+
+			&-title{
+				margin-bottom: 20px;
+				font-family: Montserrat Alternates;
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 28px;
+				letter-spacing: 0px;
+			}
+
+			&-buttons{
+				display: flex;
+				align-items: center;
+
+				&-singleButton{
+					display: flex;
+					width: 136px;
+					height: 46px;
+					align-items: center;
+					margin-right: 20px;
+					cursor: pointer;
+
+					border: 2px solid;
+					border-radius: 4px;
+
+					&-checkboxActive{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin: 0 16px;
+						width: 14px;
+						height: 14px;
+						border-radius: 50%;
+						border: 2px solid #35A0EE;
+						background: #F7FBFF;
+
+						&-round{
+							width: 8px;
+							height: 8px;
+							border-radius: 50%;
+							background: #35A0EE;
+						}
+					}
+
+					&-checkboxDisactive{
+						margin: 0 16px;
+						width: 14px;
+						height: 14px;
+						border-radius: 50%;
+						border: 2px solid #D5D9DC;
+						background: #fff;
+					}
+
+					&-text{
+						font-family: Montserrat;
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 24px;
+						letter-spacing: 0.02em;
+					}
+				}
+
+				&-active{
+					border-color: #35A0EE;
+					background: #F7FBFF;
+					color:#35A0EE;
+				}
+
+				&-disactive{
+					border-color: #D5D9DC;
+					background: #fff;
+					color: #0B1D2E;
+				}
+
+			}
+		}	
+	}
+
+	&-bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 93px;
+
+		&-link{
+			color: #35A0EE;
+			text-decoration: none;
+			font-family: Montserrat;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			letter-spacing: 0.02em;
+		}
+
+		&-buttons{
+			display: flex;
+			justify-content: space-between;
+
+			&-skip{
+				margin-right: 16px;
+				padding: 12px 24px;
+				background: rgba(53, 160, 238, 0.1);
+				border-radius: 4px;
+				cursor: pointer;
+
+				font-family: Montserrat;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: 0.02em;
+				color: #35A0EE;
+			}
+
+			&-next{
+				text-decoration: none;
+				padding: 12px 24px;
+				background: #35A0EE;
+				border-radius: 4px;
+				cursor: pointer;
+
+				font-family: Montserrat;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 24px;
+				letter-spacing: 0.02em;
+				color: #fff;
+			}
+		}
+	}
+}
